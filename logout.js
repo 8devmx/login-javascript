@@ -1,8 +1,8 @@
-const logOut = () => {
+const logout = () => {
   sessionStorage.removeItem('token')
   window.location = '/index.html'
 }
 
-const logoutButton = document.querySelector("#logoutButton")
+const logoutButton = document.querySelector('#logoutButton')
 
-logoutButton.addEventListener("click", logOut)
+logoutButton.addEventListener('click', logout)

@@ -43,7 +43,7 @@ btn.addEventListener("click", async function (event) {
   const response = await fetch('http://localhost/api-flight/auth', options)
   const json = await response.json()
   if (json?.error) {
-    showErrorMessage(`Error: ${json.error}`)
+    showErrorMessage(`El login ha fallado: ${json.error}`)
     return false
   }
   sessionStorage.setItem('token', json.token)
